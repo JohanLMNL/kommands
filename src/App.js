@@ -1,24 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
+import { Provider } from './context';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from 'react-router-dom';
+
+import Home from './pages/Home';
+import Kommands from './pages/Kommands';
+import ThermalPrinter from './ThermalPrinter';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home></Home>,
+  },
+  {
+    path: '/kommands',
+    element: <Kommands></Kommands>,
+  },
+  {
+    path: '/print',
+    element: <ThermalPrinter />,
+  },
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider>
+      <RouterProvider router={router} />
+    </Provider>
   );
 }
 

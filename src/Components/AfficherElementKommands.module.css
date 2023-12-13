@@ -1,0 +1,33 @@
+.element {
+  font-size: larger;
+  text-align: center;
+}
+
+.cell {
+  height: 50px;
+  width: 70px;
+}
+
+.cellG {
+  height: 50px;
+  width: 70px;
+  color: #79b791;
+}
+
+.cellR {
+  height: 50px;
+  width: 70px;
+  color: #990d35;
+}
+
+.cellB {
+  height: 50px;
+  width: 70px;
+  color: #66ced6;
+}
+
+.commentaire {
+  font-size: small;
+  font-style: italic;
+  opacity: 0.8;
+}

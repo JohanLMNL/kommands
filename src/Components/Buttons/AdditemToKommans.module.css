@@ -1,0 +1,14 @@
+.addItemButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 2px solid #cfcfcf;
+}

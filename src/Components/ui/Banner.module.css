@@ -1,0 +1,15 @@
+.Banner {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  background-color: #171219;
+  color: #fcfcfc;
+  margin-bottom: 70px;
+  font-weight: 700;
+  font-size: large;
+  border-bottom: 2px solid #cfcfcf;
+  border-radius: 10px;
+}
